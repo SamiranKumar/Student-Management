@@ -17,6 +17,8 @@ public interface IViewRegistrationDetails {
 
     void setErrorConfirmPassword(String message);
 
+    void regSuccess(String message);
+
     void showProgressBar();
 
     void hideProgressBar();

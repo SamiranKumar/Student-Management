@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.skh.appsghor.studentmanagement.R;
-import com.skh.appsghor.studentmanagement.ui.auth.reg.RegistrationDetailsActivity;
+import com.skh.appsghor.studentmanagement.ui.auth.reg.RegistrationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startActivity(new Intent(getApplicationContext(), RegistrationDetailsActivity.class));
+        startActivity(new Intent(getApplicationContext(), RegistrationActivity.class));
     }
 }

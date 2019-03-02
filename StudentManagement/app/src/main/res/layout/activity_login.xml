@@ -70,23 +70,6 @@
                     android:layout_marginTop="8dp">
 
                     <EditText
-                        android:id="@+id/et_last_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="@string/last_name"
-                        android:paddingTop="0dp"
-                        android:singleLine="true"
-                        android:text="" />
-
-                </android.support.design.widget.TextInputLayout>
-
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp">
-
-                    <EditText
                         android:id="@+id/et_password"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -97,24 +80,9 @@
 
                 </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp">
-
-                    <EditText
-                        android:id="@+id/et_confirm_password"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="@string/confirm_password"
-                        android:inputType="textPassword"
-                        android:paddingTop="0dp"
-                        android:singleLine="true" />
-
-                </android.support.design.widget.TextInputLayout>
 
                 <Button
-                    android:id="@+id/button_login"
+                    android:id="@+id/button_reg"
 
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

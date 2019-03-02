@@ -1,7 +1,7 @@
 package com.skh.appsghor.studentmanagement.ui.auth.reg;
 
 
-public class PresenterRegistrationDetailsValidation {
+public class PresenterRegistrationValidation {
 
     public static int PASSWORD_MIN_LENGTH = 4;
     public static int PASSWORD_MAX_LENGTH = 15;
@@ -19,7 +19,7 @@ public class PresenterRegistrationDetailsValidation {
     private IViewRegistrationDetails iViewRegistrationDetails;
 
 
-    public PresenterRegistrationDetailsValidation(IViewRegistrationDetails iViewRegistrationDetails) {
+    public PresenterRegistrationValidation(IViewRegistrationDetails iViewRegistrationDetails) {
         this.iViewRegistrationDetails = iViewRegistrationDetails;
     }
 

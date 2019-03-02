@@ -2,6 +2,7 @@ package com.skh.appsghor.studentmanagement.db.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
@@ -14,8 +15,8 @@ public class User {
     public long id;
 
     @NonNull
-    @ColumnInfo(name = "_name_")
-    public String name;
+    @ColumnInfo(name = "u_name_")
+    public String UserName;
 
     @NonNull
     @ColumnInfo(name = "_password")
@@ -35,12 +36,18 @@ public class User {
     public String rollNo;
 
 
-    public User(@NonNull String name, @NonNull String password, @NonNull String type) {
-        this.name = name;
+    public User(@NonNull String UserName, @NonNull String password, @NonNull String type) {
+        this.UserName = UserName;
         this.password = password;
         this.type = type;
     }
 
-
-
+    @Ignore
+    public User(@NonNull String UserName, @NonNull String password, @NonNull String type, String fullName, String rollNo) {
+        this.UserName = UserName;
+        this.password = password;
+        this.type = type;
+        this.fullName = fullName;
+        this.rollNo = rollNo;
+    }
 }

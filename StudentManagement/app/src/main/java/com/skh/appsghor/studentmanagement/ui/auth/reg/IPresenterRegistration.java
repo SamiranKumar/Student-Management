@@ -1,7 +1,7 @@
 package com.skh.appsghor.studentmanagement.ui.auth.reg;
 
 
-public interface IPresenterRegistrationDetails {
+public interface IPresenterRegistration {
 
     void setTittle();
 

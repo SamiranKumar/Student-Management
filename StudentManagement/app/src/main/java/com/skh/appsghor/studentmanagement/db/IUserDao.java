@@ -14,7 +14,7 @@ import java.util.List;
 @Dao
 public interface IUserDao {
 
-    @Query("SELECT * FROM user WHERE _name_ =:name  AND _password =:passWord  LIMIT 1")
+    @Query("SELECT * FROM user WHERE u_name_ =:name  AND _password =:passWord  LIMIT 1")
     User findUserByNamePass(String name, String passWord);
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
