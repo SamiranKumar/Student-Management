@@ -1,4 +1,4 @@
-package com.skh.appsghor.studentdemotest.db;
+package com.skh.appsghor.studentmanagement.db;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
@@ -6,15 +6,16 @@ import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
-import com.skh.appsghor.studentdemotest.db.entity.User;
+import com.skh.appsghor.studentmanagement.db.entity.User;
 
 import java.util.List;
+
 
 @Dao
 public interface IUserDao {
 
     @Query("SELECT * FROM user WHERE _name_ =:name  AND _password =:passWord  LIMIT 1")
-    User findTrainByName(String name,String passWord);
+    User findUserByNamePass(String name, String passWord);
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     long insert(User user);
@@ -27,7 +28,7 @@ public interface IUserDao {
     void deleteAll();
 
     @Query("SELECT COUNT(*) from user")
-    int countAction();
+    int countUsers();
 
     @Query("SELECT * FROM user")
     List<User> getAllTrains();

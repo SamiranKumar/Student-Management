@@ -1,18 +1,11 @@
-package com.skh.appsghor.studentdemotest.db;
+package com.skh.appsghor.studentmanagement.db;
 
 import android.os.AsyncTask;
 
-import com.skh.appsghor.studentdemotest.util.DemoData;
-
-import static com.skh.appsghor.studentdemotest.ui.MainActivity.logPrint;
+import static com.skh.appsghor.studentmanagement.util.LogUtil.logPrint;
 
 
 public class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
-    private final IUserDao iUserDao;
-
-    public PopulateDbAsync(StudentManagementDB instance) {
-        iUserDao = instance.iUserDao();
-    }
 
 
     @Override
@@ -28,14 +21,6 @@ public class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-
-
-        iUserDao.deleteAll();
-        long isInsert = iUserDao.insert(DemoData.getDemoAdmin());
-
-        if (isInsert > 0) {
-            logPrint("isInsert: SUCCESS >> " + isInsert);
-        }
 
 
         return null;
