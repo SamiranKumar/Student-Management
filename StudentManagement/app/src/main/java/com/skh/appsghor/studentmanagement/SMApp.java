@@ -15,3 +15,4 @@ public class SMApp extends Application {
     public static Context getContext() {
         return context;
     }
+}
